@@ -1,6 +1,9 @@
 # sudo apt install python3-venv
 # crear el main.py y requirements.txt con las librerias necesarias adentro de requirements
 
+# buena práctica recomendada (sirve para que funcione en cualquier PC)
+echo -e ".venv/\n__pycache__/" > .gitignore
+
 # crear el entorno virtual
 python3 -m venv .venv
 
