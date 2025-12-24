@@ -1,0 +1,23 @@
+# sudo apt install python3-venv
+# crear el main.py y requirements.txt con las librerias necesarias adentro de requirements
+
+# crear el entorno virtual
+python3 -m venv .venv
+
+# mostrar que se haya creado el entorno virtual
+ls -a
+
+# activar el entorno virtual
+source .venv/bin/activate
+
+# ahora ya podemos instalar las librerias necesarias
+pip install -r requirements.txt
+
+# mostrar todas las librerías que se instalaron en el entorno virtual
+pip freeze
+
+# salir del entorno virtual
+deactivate
+
+# volver a entrar al entorno virtual, no es necesario hacer pip install de nuevo
+source .venv/bin/activate
